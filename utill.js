@@ -9,6 +9,12 @@ utill.querystring = function (params, url) {
 		reg = null;
 		r = null;
 		return context == null || context == "" || context == "undefined" ? "" : context;
+		/*
+		*
+		*	utill.querystring('data','http://www.host.com/search?name=lj&data=testdata')
+		* ["&data=testdata", "&", "testdata", "", index: 34, input: "http://www.host.com/search?name=lj&data=testdata"]
+		*
+		*/
 };
 utill.cookie = {
 		'prefix': '',
